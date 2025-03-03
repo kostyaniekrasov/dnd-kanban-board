@@ -2,7 +2,7 @@ import { IssueStatus, IssueType } from '@/types';
 import { Octokit } from 'octokit';
 
 const octokit = new Octokit({
-  auth: import.meta.env.GITHUB_TOKEN,
+  auth: import.meta.env.TOKEN_GITHUB,
 });
 
 const fetchIssuesByParams = async (
